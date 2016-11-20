@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //    script函数写在代码下面或者head里面  head里面用window.onload=function（）{}；但是写在body里快  但不加载img等资源  用onload所有的都加载完在执行
+    //    js基本数据类型： number  string  boolean  undefined（定义了没赋值）  null（获取了一个不存在的对象）         typeof 看类型
+    //    prompt（“请输入一个数字”，“默认值”）；弹出框，上面写  请输入一个数字  下面一个文本框 里面没有输入时显示默认值 可以没有默认值  可以返回一个值var a = prompt。。。
+    //    返回的值是文本框里输入的值
+    //    for(var p in arr){
+    //        console.log(p+arr[p]);  循环数组或者元素属性
+    //    }
+    //    function aa(){
+    //        可以先调用
+    //    }
+    //    var bb = function(){
+    //        不可以先调用
+    //    }
+    //数组
+    //    arr.join(“：”); 把数组的东西链接成字符串 后面的是每个数组元素之间用什么分隔符链接  可以不写
+    //    arr.pop（）；删除数组最后一个数  并且返回最后一个数
+    //    shift 删除第一个
+    //    reverse（）   颠倒数组的值
+    //     sort（）；  数组元素排序  按字典序  ascall码值  里面可以传参数
+    //    sort(function(a,b){
+    //        return b-a;  逆序排列
+    //        return a-b   正序排列
+    //    })；
+
+    //data
+    //    取时间
+
+    //Math
+    //    Math.random()  随机数  0~1之间
+    //    Math.random() *(h-l)+l; 取l到h之间的数  但是取不到h  所以可以向上取整  Math.ceil(Math.random() *(h-l))+l;
+    //    floor 向下取整
+    //    abs（x） 取绝对值
+
+
+    //sting
+    //    charAt(下标); 返回指定位置的字符
+    //    indexOf（"aa"） 返回字符串在字符串中第一次出现的位置 没有返回-1
+    //    str.substring(3，7)  方法用于提取字符串中介于两个指定下标之间的字符 3<=  <7  没有后面的就默认到结尾
+    //    split(“a”)   方法用于把一个字符串分割成字符串数组。如果a在边上  为边界 多一个空格字符串  其他的把a变成断点
+
+    //window
+    //    parseInt("a",16) ;  16进制的a转化成int
+    //    setInterval(function(){console.log(a)},5000); 每5000毫秒输出
+    //    setTimeout(function(){console.log(a)},5000);到5000毫秒输出一次 就结束
+    //    history.back   history.go  访问前一页或者后一页url
+    //    navigator.userAgent   输出什么浏览器
+    //  if(navigator.userAgent.indexOf("Mobile")!=-1){
+    //      location.href="http://m.taobao.com";
+    //  }
+    //    else{
+    //      location.href="http://taobao.com";
+    //  }
+
+
+    //    location
+    //    location.hostname 域名
+    //    location.href  访问的网址
+
+    //    document.creatElement("li");创建li
+    //    oUl.appendChild(oLi);  追加到ul
+    //    childre   得到亲孩子元素节点
+    //    childNots   得到文本节点与元素节点
+    //    nodeType  可以判断是什么节点  1是元素节点  3是文本  8是注释
+    //    function next(elem){
+    //        do{
+    //            elem = elem.nextSibling;
+    //        }while(elem && elem.nodeType !=1);
+    //        return elem;
+    //    }
+    //找下一个元素节点
+    //    function first(elem){
+    //        elem = elem.firstChild;
+    //        return elem&&(elem.nodeType==1?elem:next(elem));
+    //    }
+    //找第一个元素节点
+
+
+
+    //    事件
+    //    oImg.onload = function(){
+    //        图片加载完在出发
+    //    }
+    //    window.onscroll = function(){
+    //        var scroll = document.documentElement.scrollTop||document.body.scrollTop;
+    //        console.log(scroll);
+    //        滚动条设置，输出滚动条位置
+    //    }
+    //   window.body.oncontextmenu   右键
+    //    var target = e.target||window.event.srcElement;  获取事件源
+    //    oDiv.addEventListener("click",function(){
+    //        alert(1);  添加事件  两个参数  第一个是事件  不加on 第二个是事件出发后的事情  防止用onclick等会被后面的覆盖  这个会冒泡事件 不会覆盖  ie不支持  这个的this.id是oDiv
+    //    });  还有第三个参数  默认为false  如果改成ture 就变成事件捕获   输出顺序相反
+    //    oDiv.attachEvent()  和上面一样  但是执行时从下往上执行  冒泡时反着冒 ie支持  chrome不支持  这个的this.id为undefined
+
+    //事件委托  把子元素的事件利用事件冒泡委托给父元素
+    //    如果给每个li绑事件  追加的li就会没有事件  为了解决这个  可以把事件绑在ul上
+
+
+</script>
+</body>
+</html>
