@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #contraint{
+            width: 570px;
+            height: 570px;
+            overflow: hidden;
+            position: relative;
+            left: 400px;
+        }
+        #nav{
+            position: relative;
+            width: 4560px;
+            height: 450px;
+
+        }
+        #nav img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 570px;
+            height: 450px;
+        }
+        #content {
+            width: 2000px;
+            height: 150px;
+            position: absolute;
+            left: 0;
+            background: #bbbbbb;
+        }
+        #content img{
+            float: left;
+            width: 132.5px;
+            height: 100px;
+            padding: 10px 0 10px 10px;
+        }
+        #flaot{
+            width: 560px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #aaaaaa;
+            height: 30px;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+            padding-right: 10px;
+            line-height: 30px;
+            z-index: 999;
+        }
+        #flaot span{
+            float: right;
+        }
+        #next,#prev{
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top:200px;
+            background-image: url(imgs/btn.gif);
+            opacity: 0;
+            filter: alpha(opacity=0);
+            z-index: 999;
+        }
+        #prev{
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            left: 10px;
+        }
+        #next{
+            background-repeat: no-repeat;
+            background-position: 0 -60px;
+            left: 500px;
+        }
+        .selected{
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+        #content .small-opacity{
+            opacity: .3;
+            filter: alpha(opacity=30);
+        }
+    </style>
+</head>
+<body>
+    <div id="contraint">
+        <div id="nav">
+            <img src="imgs/1.jpg" alt=""/>
+            <img src="imgs/2.jpg" alt=""/>
+            <img src="imgs/3.jpg" alt=""/>
+            <img src="imgs/4.jpg" alt=""/>
+            <img src="imgs/5.jpg" alt=""/>
+            <img src="imgs/6.jpg" alt=""/>
+            <img src="imgs/7.jpg" alt=""/>
+            <img src="imgs/8.jpg" alt=""/>
+            <div id="flaot">
+                <span id="a-page">/8</span>
+                <span id="b-page">1</span>
+            </div>
+            <div id="prev"></div>
+            <div id="next"></div>
+        </div>
+        <div id="content">
+            <img src="imgs/1.jpg" alt=""/>
+            <img src="imgs/2.jpg" alt=""/>
+            <img src="imgs/3.jpg" alt=""/>
+            <img src="imgs/4.jpg" alt=""/>
+            <img src="imgs/5.jpg" alt=""/>
+            <img src="imgs/6.jpg" alt=""/>
+            <img src="imgs/7.jpg" alt=""/>
+            <img src="imgs/8.jpg" alt=""/>
+        </div>
+    </div>
+    <script src="jslib.js"></script>
+    <script src="lunbo.js"></script>
+</body>
+</html>
